@@ -1,0 +1,691 @@
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        background-color: white;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        background-image: url("../IMAGES/light_background_image-seamless_tile.jpg");
+        background-repeat: repeat;
+    }
+
+    nav {
+        width: 100%;
+        background: #2B373D;
+        z-index: 10;
+        border-bottom: 3px solid rgba(0, 255, 0, 0.7);
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: right;
+        min-height: 70px;
+    }
+
+    nav a {
+        color: lime;
+        text-decoration: none;
+    }
+
+    nav ul li {
+        display: inline-flex;
+        margin: 10px;
+        padding: 15px;
+        padding-left: 20px;
+        padding-right: 25px;
+        font-weight: bold;
+        border-radius: 7px;
+        font-size: 90%;
+    }
+
+    .sub_menu {
+        display: none;
+        z-index: 10;
+    }
+
+    nav ul li:hover .sub_menu {
+        display: block;
+        position: absolute;
+        background: #2B373D;
+        margin-top: 35px;
+        margin-left: -20px;
+        border-left: 2px solid lime;
+        border-bottom: 2px solid lime;
+    }
+
+    nav ul li:hover .sub_menu ul li {
+        display: block;
+        background: transparent;
+        text-align: left;
+        border-bottom: 1px double darkslategray;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 0;
+    }
+
+    #logo {
+        float: left;
+        font-family: serif;
+        font-variant: small-caps;
+        font-size: larger;
+        font-weight: bold;
+        padding: 5px;
+        margin: 1.5%;
+        margin-left: 2%;
+    }
+
+    #showcase {
+        border: 0.1px dashed rgba(0, 255, 0, 0.0);
+        width: 100%;
+        min-height: 500px;
+        background-image: url("../IMAGES/wallpaper-nature-hd-pc-Free-Background.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        font-size: larger;
+        text-shadow: 2px 2px px black;
+    }
+
+    #showcase h1 {
+        margin: 8% 0;
+    }
+
+    #showcase h3 {
+        margin: 2% 0;
+    }
+
+    #showcase a {
+        text-decoration: none;
+        border: 3px solid rgba(0, 255, 0, 0.1);
+        padding: 8px;
+        color: white;
+        border-radius: 20px;
+        font-weight: bold;
+        background-clip: padding-box;
+        text-shadow: none;
+        transition: color 500ms ease-in, border 1s ease-in, background-color 1s ease-in;
+    }
+
+    #showcase a:hover {
+        background-color: lime;
+        border: 3px solid rgba(0, 255, 0, 0.7);
+        color: black;
+    }
+
+    #section-header {
+        padding-top: 50px;
+        width: 100%;
+        min-height: 50px;
+        background: -webkit-linear-gradient(top, rgb(19, 108, 202), white);
+    }
+
+    #section-one {
+        width: 100%;
+        min-height: 300px;
+        box-shadow: 0px 0px 15px 3px grey;
+    }
+
+    #section-one img {
+        width: 30%;
+        height: 300px;
+        visibility: visible;
+    }
+
+    .section-right {
+        padding: 15px 3%;
+        width: 64%;
+        height: 270px;
+        float: right;
+    }
+
+    .section-left {
+        padding: 15px 3%;
+        width: 64%;
+        height: 270px;
+        float: left;
+    }
+
+    #section-two {
+        width: 100%;
+        min-height: 300px;
+        box-shadow: 0px 0px 15px 3px grey;
+        margin-top: 45px;
+    }
+
+    #section-two img {
+        width: 30%;
+        height: 300px;
+        visibility: visible;
+    }
+
+    #section-three {
+        width: 100%;
+        min-height: 300px;
+        box-shadow: 0px 0px 15px 3px grey;
+        margin-top: 45px;
+    }
+
+    #section-three img {
+        width: 30%;
+        height: 300px;
+        visibility: visible;
+    }
+
+    #section-four {
+        width: 100%;
+        min-height: 300px;
+        box-shadow: 0px 0px 15px 3px grey;
+        margin-top: 45px;
+    }
+
+    #section-four img {
+        width: 30%;
+        height: 300px;
+        visibility: visible;
+    }
+
+    #category-header {
+        width: 100%;
+        min-height: 500px;
+        background-color: yellowgreen;
+        background: url("../IMAGES/Latest-Game-Wallpapers-for-Desktop.jpg");
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        font-size: larger;
+        font-variant: small-caps;
+        color: white;
+        padding-top: 15%;
+        text-shadow: 2px 2px black;
+    }
+
+    #category-main {
+        width: 100%;
+        font-variant: small-caps;
+        text-align: center;
+        padding-top: 3%;
+        padding-bottom: 5%;
+    }
+
+    #category-main h1 {
+        padding-bottom: 4%;
+    }
+
+    .inner-item-section {
+        width: 25%;
+        padding: 1% 7%;
+        margin: 1% 3%;
+        border-radius: 40px;
+        display: inline-block;
+        background: -webkit-linear-gradient(left, #D1913C, #FFD194);
+        transition: transform 500ms ease-in;
+    }
+
+    .inner-item-section:hover {
+        transform: scale(1.1, 1.1);
+        box-shadow: 0px 0px 20px 1px grey;
+    }
+
+    .inner-item-section img {
+        width: 100px;
+        height: 100px;
+        float: left;
+    }
+
+    .inner-item-section h4 {
+        padding-top: 10%;
+        font-family: sans-serif;
+        font-size: x-large;
+        color: black;
+    }
+
+    #newsletter {
+        width: 80%;
+        min-height: 110px;
+        background-color: #2B373D;
+        padding: 3% 10%;
+        word-wrap: break-word;
+        color: white;
+    }
+
+    #newsletter input:first-child {
+        width: 50%;
+        height: 25px;
+        margin: 1.5% 2.5%;
+        margin-left: 0;
+    }
+
+    #newsletter input:last-child {
+        width: 20%;
+        height: 25px;
+        font-size: large;
+        background-color: #FF951B;
+    }
+
+    #category-why-us {
+        width: 80%;
+        margin: 5%;
+        padding: 5%;
+        box-shadow: 10px 5px 18px 4px rgba(128, 128, 128, 0.8);
+        background: url("../IMAGES/about_1.jpg")no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .category-section-left {
+        width: 80%;
+        margin: 20px 5%;
+        margin-bottom: 40px;
+        padding: 10px 5%;
+        height: fit-content;
+        box-shadow: 10px 5px 18px 4px rgba(128, 128, 128, 0.8);
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    .category-section-right {
+        width: 80%;
+        margin: 20px 5%;
+        margin-bottom: 40px;
+        padding: 10px 5%;
+        height: fit-content;
+        box-shadow: 10px 5px 18px 4px rgba(128, 128, 128, 0.8);
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    #projects-wedding-shots {
+        width: 90%;
+        padding: 20px 0%;
+        margin: 20px 5%;
+        margin-top: 35px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+    }
+
+    #projects-wedding-shots h1 {
+        font-variant: small-caps;
+        font-family: "Apple Chancery", "Lucida Calligraphy", "Lucida Handwriting";
+        margin-bottom: 5px;
+    }
+
+    #wedding-shots-image-slider {
+        width: 100%;
+    }
+
+    #wedding-shots-image-slider img {
+        width: 100%;
+        height: 650px;
+        margin-bottom: none;
+        padding-bottom: none;
+    }
+
+    #next-button {
+        float: right;
+        width: 18%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: white;
+        background-color: rgb(19, 108, 202);
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    #previous-button {
+        width: 18%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: white;
+        background-color: rgb(19, 108, 202);
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    #next-button:hover {
+        background-color: rgb(12, 77, 146);
+        cursor: pointer;
+    }
+
+    #previous-button:hover {
+        background-color: rgb(12, 77, 146);
+        cursor: pointer;
+    }
+
+    #wedding-shots-quotation {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    #wedding-shots-quotation input {
+        margin: 10px 0;
+        width: 150px;
+        height: 30px;
+        font-size: larger;
+        border-radius: 15px;
+        border: 2px double rgb(12, 77, 146);
+    }
+
+    #projects-music-videos {
+        width: 90%;
+        padding: 20px 0%;
+        margin: 20px 5%;
+        margin-top: 35px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+    }
+
+    #projects-music-videos h1 {
+        font-family: "Apple Chancery", "Lucida Calligraphy", "Lucida Handwriting";
+    }
+
+    .music-video-options {
+        background: -webkit-linear-gradient(left, #00c6ff, #0072ff);
+        text-align: center;
+        margin: 1.5% 10%;
+        margin-bottom: 0;
+        padding: 20px;
+        border-radius: 30px;
+        font-size: larger;
+        font-weight: bold;
+    }
+
+    .music-video-options:hover {
+        background: -webkit-linear-gradient(left, #0053b8, #0053b8);
+        cursor: pointer;
+    }
+
+    .music-video-display {
+        text-align: center;
+        margin: 0 10%;
+        border-radius: 30px;
+        display: none;
+    }
+
+    .music-video-display video {
+        padding: 10px 2.5% 10px 2.5%;
+        width: 95%;
+    }
+
+    #projects-photography {
+        width: 90%;
+        padding: 20px 0%;
+        margin: 20px 5%;
+        margin-top: 35px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+    }
+
+    #projects-photography h1 {
+        font-family: "Apple Chancery", "Lucida Calligraphy", "Lucida Handwriting";
+    }
+
+    #photography-showcase {
+        height: 450px;
+        background-image: url("../IMAGES/wallpaper-nature-hd-pc-Free-Background.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    #photography-prev {
+        height: 100%;
+        width: 15%;
+        display: inline-flex;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    #photography-prev:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        cursor: pointer;
+    }
+
+    #photography-next {
+        height: 100%;
+        width: 15%;
+        display: inline-flex;
+        float: right;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    #photography-next:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        cursor: pointer;
+    }
+
+    #gallaries {
+        width: 100%;
+        padding-top: 20px;
+        min-height: 80px;
+        text-align: center;
+    }
+
+    #gallaries h3 {
+        font-variant: small-caps;
+    }
+
+    #gallaries div {
+        width: 70px;
+        height: 45px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+        font-weight: 800;
+        display: inline-flex;
+        padding-top: 25px;
+        padding-left: 5px;
+        margin-left: 0.1%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: 1px dashed yellow;
+    }
+
+    #gallaries div:hover {
+        cursor: pointer;
+    }
+
+    table{
+      margin-top: 5%;
+      width: 100%;
+    }
+    table td{
+      width: 100%;
+      transform: translate(5%, 0);
+
+    }
+    table img{
+      width: 100%;
+      height: 400px;
+    }
+    table th{
+      font-size: 250%;
+      font-family: cursive;
+    }
+
+    #form{
+      padding: 30px 5%;
+      margin: 50px 25% 300px 25%;
+      background: white;
+      border-radius: 40px;
+      font-family: sans-serif;
+      font-variant: small-caps;
+      box-shadow: 0px 0px 5px 1px grey;
+    }
+
+    #form:hover{
+      box-shadow: 0px 0px 50px 5px grey;
+    }
+
+    #form h1{
+      padding: 10px 0;
+      font-variant: small-caps;
+    }
+
+    #form input{
+      width: 100%;
+      height: 25px;
+      padding: 5px 0;
+      border:none;
+      font-size:120%;
+      border-bottom: 3px solid #0DC312;
+    }
+    #form input:hover{
+      animation: borderChange 1s linear 0s infinite alternate;
+    }
+    #form textarea{
+      width: 100%;
+    }
+
+    #form input:last-child{
+      border: none;
+      box-shadow: 0px 0px 3px 1px grey;
+      border-radius: 30px;
+      height: 50px;
+      margin: 10px 35%;
+      width: 30%;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    #form input:last-child:hover{
+      animation: buttonOoz 1500ms ease-in-out 0s infinite alternate;
+    }
+
+    #our-socials{
+      text-align: center;
+      font-variant: small-caps;
+      font-size: 120%;
+      padding: 30px;
+      color: cyan;
+    }
+
+    #socials-main{
+      text-align: center;
+    }
+
+
+
+    #inner-box{
+      margin: 0 17%;
+      width: 60%;
+    }
+
+    #section-refrences{
+      width: 90%;
+      padding: 2.5%;
+      margin: 2.5%;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0px 0px 20px 5px grey;
+    }
+
+    #section-refrences h1{
+      padding: 10px 0;
+    }
+
+    #section-refrences p{
+      padding: 25px;
+    }
+
+    footer {
+        position: relative;
+        bottom: 0px;
+        margin-top: 75px;
+        background-color: #2B373D;
+    }
+
+    footer h1 {
+        width: 80%;
+        margin-left: 5%;
+        padding-top: 20px;
+        font-variant: small-caps;
+        color: white;
+    }
+
+    footer #socials {
+        width: 315px;
+        margin: 20px 5%;
+        border-bottom: 1px solid white;
+    }
+
+    footer img {
+        width: 50px;
+        height: 50px;
+        margin-right: 4%;
+    }
+
+    footer #sub-footer {
+        margin-left: 5%;
+        color: white;
+        padding-bottom: 3px;
+    }
+
+    footer span {
+        color: lime;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+    }
+    /*Animation Keyframes*/
+
+    @keyframes bgChange {
+        from {
+            background: -webkit-linear-gradient(left, #00c6ff, #0072ff);
+        }
+        to {
+            background: -webkit-linear-gradient(left, #0072ff, #0072ff);
+        }
+    }
+
+    @keyframes borderChange {
+      from{
+        border-color: #0DC312;
+      }
+      to{
+        border-color: white;
+      }
+    }
+
+    @keyframes buttonOoz {
+      from{
+        background: #0DC312;
+        font-size: 120%;
+      }
+      to{
+        background: white;
+        font-size: 140%;
+      }
+    }
+
+    @keyframes rotateLeft {
+      from{
+        transform: rotate(0deg);
+      }
+      to{
+        transform: rotate(360deg);
+      }
+    }
+    @keyframes rotateRight {
+      from{
+        transform: rotate(0deg);
+      }
+      to{
+        transform: rotate(-360deg);
+      }
+    }
+    /*Mobile*/
+
+    @media (max-width:768px) {
+        #wedding-shots-image-slider img {
+            width: 100%;
+            height: 300px;
+            margin-bottom: none;
+            padding-bottom: none;
+        }
+    }

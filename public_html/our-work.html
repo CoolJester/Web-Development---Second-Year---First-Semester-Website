@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="Ntsako Baloyi">
+        <title>Goat Culture | Projects</title>
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+</head>
+
+<body>
+
+    <nav>
+        <div id="logo">
+            <a href="index.html">Bnt Culture Entertainment</a>
+        </div>
+        <ul>
+            <a href="index.html">
+                <li id="active">HOME &triangledown;
+                    <div class="sub_menu">
+                        <ul>
+                            <li><a href="index.html#section-header">Summary</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </a>
+            <a href="about-us.html">
+                <li>ABOUT US&triangledown;
+                    <div class="sub_menu">
+                        <ul>
+                            <li><a href="about-us.html#about-us-one">History</a></li>
+                            <li><a href="about-us.html#about-us-two">Mission</a></li>
+                            <li><a href="about-us.html#about-us-three">Vision</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </a>
+            <a href="category.html">
+                <li>SERVICES &triangledown;
+                    <div class="sub_menu">
+                        <ul>
+                            <li><a href="category.html#category-header">Offers</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </a>
+            <a href="contact-us.html">
+                <li>CONTACT US &triangledown;
+                    <div class="sub_menu">
+                        <ul>
+                            <li><a href="contact-us.html">Location</a></li>
+                            <li><a href="get-involved.html">Form</a></li>
+                            <li><a href="category.html#newsletter">Newsletter</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </a>
+        </ul>
+    </nav>
+
+    <div id="projects-wedding-shots">
+        <h1>Wedding Shots</h1>
+        <hr>
+        <div id="wedding-shots-image-slider">
+            <img src="./IMAGES/w1.jpg" id="wedding-shots-image">
+            <div id="next-button" onclick="next()">
+                NEXT
+            </div>
+            <div id="previous-button" onclick="prev()">
+                PREVIOUS
+            </div>
+        </div>
+        <div id="wedding-shots-quotation">
+            <h2>Here you can calculate the approximate cost of a surtain number of images</h2>
+            <input type="number" id="user-number">
+            </br>
+            <button onclick="calculate()">CALCULATE</button>
+            <h3 id="display">Approx : R0.00</h3>
+        </div>
+    </div>
+
+    <div id="projects-music-videos">
+        <h1>Music/Short Videos</h1>
+        <p>Click to see the video</p>
+        <hr>
+        <!--Section One-->
+        <div class="music-video-options" onclick="sectionOneVideo()">
+            Masupa by Focalistic feat The Scorpion Kings
+        </div>
+        <div class="music-video-display">
+            <video controls>
+                    <source src="./VIDEOS/Your-Facebook-Video-fbdown.net.mp4" type="video/mp4">
+                </video>
+        </div>
+
+        <!--Section Two-->
+        <div class="music-video-options" onclick="sectionTwoVideo()">
+            Ibramhimovic - Goal Compliation
+        </div>
+        <div class="music-video-display">
+            <video controls>
+                <source src="./VIDEOS/VID-20170119-WA0009.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+
+    <footer>
+        <h1>Follow us on: </h1>
+        <div id="socials">
+            <a href="facebook.com" target="_blank"><img src="IMAGES/Icons/face_4.png"></a>
+            <a href="instagram.com" target="_blank"><img src="IMAGES/Icons/insta_4.png"></a>
+            <a href="twitter.com" target="_blank"><img src="IMAGES/Icons/twitter_2.png" alt=""></a>
+        </div>
+
+        <div id="sub-footer">
+            <p>2021 &copy; Goat Culture : Designed by <span>NSK</span> Do you want to see the references?<a href="refrences.html">Click Here</a></p>
+        </div>
+    </footer>
+
+    <script>
+        //Global Variables
+        var images = ["./IMAGES/w1.jpg", "./IMAGES/w2.jpg", "./IMAGES/w3.jpg", "./IMAGES/w4.jpg", "./IMAGES/w5.jpg", "./IMAGES/w6.jpg", "./IMAGES/w7.jpg"];
+        var slider = document.getElementById("wedding-shots-image");
+        var num = 0;
+        var videoOneControl = false;
+
+        function next() {
+            var slider = document.getElementById("wedding-shots-image");
+            num++;
+            if (num >= images.length) {
+                num = 0;
+            }
+            slider.src = images[num];
+        }
+
+        function prev() {
+            var slider = document.getElementById("wedding-shots-image");
+            num--;
+            if (num < 0) {
+                num = images.length - 1;
+            }
+            slider.src = images[num];
+        }
+
+        function calculate() {
+            var userValue = document.getElementById("user-number").value;
+            var display = document.getElementsByTagName("h3");
+
+            //Displaying the new updated price
+            display[0].innerHTML = "Approx: R" + (userValue * 50) + ".00";
+
+        }
+
+        //Displaying the videos on user command
+        function sectionOneVideo() {
+            var video = document.getElementsByClassName("music-video-display");
+            if (videoOneControl == false) {
+                video[0].style.display = "block";
+                videoOneControl = true;
+            } else {
+                video[0].style.display = "none";
+                videoOneControl = false;
+            }
+        }
+
+        function sectionTwoVideo() {
+            var video = document.getElementsByClassName("music-video-display");
+            if (videoOneControl == false) {
+                video[1].style.display = "block";
+                videoOneControl = true;
+            } else {
+                video[1].style.display = "none";
+                videoOneControl = false;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

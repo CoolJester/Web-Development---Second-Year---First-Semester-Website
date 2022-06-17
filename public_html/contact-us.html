@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Ntsako Baloyi">
+    <title>Goat Culture | Home</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <nav>
+        <div id="logo">
+            <a href="index.html">Bnt Culture Entertainment</a>
+        </div>
+        <ul>
+            <a href="index.html">
+                <li id="active">HOME &triangledown;
+                    <div class="sub_menu">
+                        <ul>
+                            <li><a href="index.html#section-header">Summary</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </a>
+            <a href="about-us.html">
+                <li>ABOUT US&triangledown;
+                    <div class="sub_menu">
+                        <ul>
+                            <li><a href="about-us.html#about-us-one">History</a></li>
+                            <li><a href="about-us.html#about-us-two">Mission</a></li>
+                            <li><a href="about-us.html#about-us-three">Vision</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </a>
+            <a href="category.html">
+                <li>SERVICES &triangledown;
+                    <div class="sub_menu">
+                        <ul>
+                            <li><a href="category.html#category-header">Offers</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </a>
+            <a href="contact-us.html">
+                <li>CONTACT US &triangledown;
+                    <div class="sub_menu">
+                        <ul>
+                            <li><a href="contact-us.html">Location</a></li>
+                            <li><a href="get-involved.html">Form</a></li>
+                            <li><a href="category.html#newsletter">Newsletter</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </a>
+        </ul>
+    </nav>
+
+    <div id="location">
+      <h1>Location</h1>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2008.8406842081838!2d28.289877309422327!3d-26.21791049891279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9517e43a07e7a9%3A0x429e4aabf7628ea9!2sMofolo%20Ave%2C%20Wattville%2C%20Benoni%2C%201501!5e0!3m2!1sen!2sza!4v1620252164459!5m2!1sen!2sza" width="80%" height="600px" style="border:0;" allowfullscreen="" loading="lazy" align="center"></iframe>
+    </div>
+
+    <div id="our-socials">
+      <h1>Our Socials</h1>
+
+      <div id="socials-main">
+        <div id="inner-box">
+          <div id="facebook-box" style="margin-bottom:50px">
+            <a href="facebook.com" target="_blank"><img src="IMAGES/Icons/face_4.png" width="100px" height="100px" id="img1"></a>
+          </div>
+          <div id="instagram-box" style="display:inline; margin-right: 100px">
+            <a href="instagram.com" target="_blank"><img src="IMAGES/Icons/insta_4.png" width="100px" height="100px" id="img2"></a>
+          </div>
+          <div id="twitter-box" style="display:inline; margin-left: 100px">
+            <a href="twitter.com" target="_blank"><img src="IMAGES/Icons/twitter_2.png" width="100px" height="100px" id="img3"></a>
+          </div>
+          <div id="phone-box" style="margin-top:50px; cursor:pointer;">
+            <img src="IMAGES/Icons/phone_1.png" width="100px" height="100px" onclick="myNumber()" id="img4">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <footer>
+        <h1>Follow us on: </h1>
+        <div id="socials">
+            <a href="facebook.com" target="_blank"><img src="IMAGES/Icons/face_4.png"></a>
+            <a href="instagram.com" target="_blank"><img src="IMAGES/Icons/insta_4.png"></a>
+            <a href="twitter.com" target="_blank"><img src="IMAGES/Icons/twitter_2.png" alt=""></a>
+        </div>
+
+        <div id="sub-footer">
+            <p>2021 &copy; Goat Culture : Designed by <span>NSK</span> Do you want to see the references?<a href="refrences.html">Click Here</a></p>
+        </div>
+    </footer>
+
+    <script>
+      //Variables
+      var socialsAll = document.getElementById("inner-box");
+      var img1 = document.getElementById("img1");
+      var img2 = document.getElementById("img2");
+      var img3 = document.getElementById("img3");
+      var img4 = document.getElementById("img4");
+
+      //Applying the Animation
+      socialsAll.style.animation = "rotateLeft 10s linear 0s infinite normal";
+      img1.style.animation = "rotateRight 10s linear 0s infinite normal";
+      img2.style.animation = "rotateRight 10s linear 0s infinite normal";
+      img3.style.animation = "rotateRight 10s linear 0s infinite normal";
+      img4.style.animation = "rotateRight 10s linear 0s infinite normal";
+
+      function myNumber(){
+        alert("073 526 3367");
+      }
+
+
+    </script>
+</body>
+</html>
